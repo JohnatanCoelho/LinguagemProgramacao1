@@ -1,4 +1,4 @@
-package fundamento;
+package tarefa;
 
 
 import java.util.Scanner;

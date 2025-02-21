@@ -14,8 +14,7 @@ public class Questao8 {
 			System.out.println("Número positivo!");		
 		}else {
 			System.out.println("Número negativo");
-			entrada.close();
 		}
-		
+		entrada.close();
 	}
 }
