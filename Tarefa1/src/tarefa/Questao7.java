@@ -13,10 +13,12 @@ public class Questao7 {
 		System.out.println("Insira um valor: ");
 		int num = entrada.nextInt();
 		if(num>10) {
-			System.out.println("É MAIOR QUE 10!");
+			String mensagem = "É MAIOR QUE 10!";
+			System.out.println(mensagem);
 		}
 		else {
-			System.out.println("NÃO É MAIOR QUE 10");
+			String mensagem = "NÃO É MAIOR QUE 10!";
+			System.out.println(mensagem);
 		}
 		entrada.close();
 	}

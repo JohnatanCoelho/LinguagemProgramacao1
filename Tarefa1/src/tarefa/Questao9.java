@@ -19,7 +19,7 @@ public class Questao9 {
 		}else {
 			total = quantMaca *1.0; 
 		}
-		System.out.println("O total a pagar é: R$ " + total);
+		System.out.printf("O total a pagar é: R$ %.2f ", total);
 		
 		entrada.close();		
 		

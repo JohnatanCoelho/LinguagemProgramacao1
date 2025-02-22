@@ -11,9 +11,11 @@ public class Questao8 {
 		System.out.println("Insira um valor: ");
 		int num = entrada.nextInt();	
 		if(num>=0){
-			System.out.println("Número positivo!");		
+			String mensagem = "Número positivo!" ;
+			System.out.println(mensagem);		
 		}else {
-			System.out.println("Número negativo");
+			String mensagem = "Número negativo!";
+			System.out.println(mensagem);
 		}
 		entrada.close();
 	}
