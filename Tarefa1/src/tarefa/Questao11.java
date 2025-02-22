@@ -3,7 +3,6 @@ package tarefa;
 import java.util.Scanner;
 
 public class Questao11 {
-	
 	public static void main(String[] args) {
 //		Ler o ano atual e o ano de nascimento de uma pessoa.
 //		Escrever uma mensagem que diga se ela poderá ou não 
@@ -15,13 +14,16 @@ public class Questao11 {
 		System.out.println("Informe o seu ano de nascimento ");
 		int anoNascimento = entrada.nextInt();
 		entrada.nextLine();
-		
-		int votar = anoAtual - anoNascimento ;
-		
-		if(votar >= 18) {
-			System.out.println("Pode votar este ano!");
-		}	else {
-			System.out.println("Não pode votar este ano!");
+
+		int votar = anoAtual - anoNascimento;
+		String mensagem;
+		if (votar >= 18) {
+			mensagem ="Pode votar este ano!" ;
+			System.out.println(mensagem);
+		} else {
+			mensagem ="Não pode votar este ano!";
+			System.out.println(mensagem);
 		}
-		}
+		entrada.close();
+	}
 }

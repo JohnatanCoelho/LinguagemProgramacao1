@@ -1,10 +1,9 @@
 package tarefa;
 
-
 import java.util.Scanner;
 
 public class Questao10 {
-
+	
 	public static void main(String[] args) {
 //		LER AS NOTAS DA 1A. E 2A. AVALIAÇÕES DE UM ALUNO. 
 //		CALCULAR A MÉDIA ARITMÉTICA SIMPLES E ESCREVER UMA 
@@ -19,17 +18,21 @@ public class Questao10 {
 		System.out.println("Insira a sua segunda nota: ");
 		double nota2 = entrada.nextDouble();
 		entrada.nextLine();
-		
+		String mensagem;
 		double media = (nota1 + nota2)/2;
 		if(media >= 6){
 			System.out.println("-----------------------");
+			mensagem = "O aluno foi Aprovado!";
 			System.out.printf("Sua média é: %.1f %n", media );
-			System.out.println("O aluno foi Aprovado!");
+			System.out.println(mensagem);
 		}else {
 			System.out.println("-----------------------");
+			mensagem = "O aluno não foi Aprovado!";
 			System.out.printf("Sua média é: %.1f %n", media );
-			System.out.println("O aluno não foi Aprovado!");
+			System.out.println(mensagem);
 		}
-		
+		entrada.close();
+	
 	} 
 }
+

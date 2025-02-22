@@ -12,10 +12,12 @@ public class Questao12 {
 		System.out.println("Insira o segundo número: ");
 		int num2 = entrada.nextInt();
 		entrada.nextLine();
-		if(num1 == num2) {
-			System.out.println("Os numeros não podem ser iguais");
-		}	else {
-			if(num1 > num2) {
+		String mensagem;
+		if (num1 == num2) {
+			mensagem = "Os numeros não podem ser iguais";
+			System.out.println(mensagem);
+		} else {
+			if (num1 > num2) {
 				System.out.println("O número " + num1 + " é maior que " + num2);
 			} else {
 				System.out.println("O número " + num2 + " é maior que " + num1);
