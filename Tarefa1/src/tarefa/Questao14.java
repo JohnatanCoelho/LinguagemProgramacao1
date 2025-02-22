@@ -21,5 +21,8 @@ public class Questao14 {
 			totalHoras = (24 - horaInicio) + horaFim;
 		}
 		System.out.println("total de horas " + totalHoras);
+		
+		entrada.close();
+		
 	}
 }
