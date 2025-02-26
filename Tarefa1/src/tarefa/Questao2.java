@@ -13,17 +13,20 @@ public class Questao2 {
 			System.out.println("Informe o número de eleitores: ");
 			int eleitores = entrada.nextInt();
 			entrada.nextLine();
+			
 			System.out.println("Informe o número de votos nulos: ");
 			int votoNulo = entrada.nextInt();
 			entrada.nextLine();			
+			
 			System.out.println("Informe o número de votos em branco: ");
 			int votoBranco = entrada.nextInt();			
-			entrada.nextLine();			
+			entrada.nextLine();	
+			
 			System.out.println("Informe o número de votos válidos: ");
 			int votoValido = entrada.nextInt();			
 			entrada.nextLine();	
 			
-			int percentualVotoNulo = (100 *votoNulo) / eleitores ;
+			int percentualVotoNulo = (100*votoNulo) / eleitores ;
 			int percentualVotoBranco = (100 *votoBranco) / eleitores ;
 			int percentualVotoValido = (100 *votoValido) / eleitores ;
 			
