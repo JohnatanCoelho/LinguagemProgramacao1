@@ -20,7 +20,7 @@ public class Questão4 {
 			
 			double custoFinal = ((((custoFabrica*distribuidor)/100)+((custoFabrica*imposto)/100))+custoFabrica);
 			
-			System.out.printf("O custo final do consumidor é: %.2f", custoFinal);
+			System.out.printf("O custo final do consumidor é: R$ %.2f", custoFinal);
 			entrada.close();
 			
 			

@@ -10,10 +10,10 @@ public class Questao6 {
 			
 			Scanner entrada = new Scanner(System.in);
 			
-			System.out.println("Informe o valor em grau celsius: ");
+			System.out.println("Informe o valor em grau Fahrenheit: ");
 			int fahrenheit = entrada.nextInt();
 			double celsius = (fahrenheit - 32)*(5.0/9.0);
-			System.out.printf("Fahrenheit: %d %n Celsius: %.2f ", fahrenheit, celsius);
+			System.out.printf("Fahrenheit: %d %nCelsius: %.2f ", fahrenheit, celsius);
 			entrada.close();
 		}
 }
