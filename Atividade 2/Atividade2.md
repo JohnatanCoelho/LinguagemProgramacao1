@@ -1,4 +1,4 @@
-# Exercício 1 
+# Exercício 2
 > <center><strong>Coletar 10 figuras contendo dois ou mais objetos de uma mesma classe. </center></strong>
 
 | <center>**Pessoas**</center> | <center>**Carros**</center> | <center>**Filmes**</center> |
