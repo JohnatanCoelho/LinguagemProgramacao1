@@ -13,3 +13,6 @@
 
 ### Pessoas
 <center><img src = "UML/Pessoas.png" widht = 250 height = 250 ></center>
+
+### Carros
+<center><img src = "UML/Carros.png" widht = 250 height = 250 ></center>
