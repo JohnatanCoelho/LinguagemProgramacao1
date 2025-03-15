@@ -1,5 +1,5 @@
 # Exercício 1 
-_Coletar 10 figuras contendo dois ou mais objetos de uma mesma classe._
+> <center><strong>Coletar 10 figuras contendo dois ou mais objetos de uma mesma classe. </center></strong>
 
 | <center>**Pessoas**</center> | <center>**Carros**</center> | <center>**Filmes**</center> |
 |-------------|------------|----------------|
@@ -7,3 +7,9 @@ _Coletar 10 figuras contendo dois ou mais objetos de uma mesma classe._
 
 | **Instrumentos Musicais** | **Animais** | **Bolos** | **Celular** | **Jogo** | **Lugares** | |
 
+## UML
+
+> <center><strong>Modelar via UML ou outra ferramenta cada classe do item 1, com três métodos e três atributos. Sugestão de ferramenta </strong></center>
+
+### Pessoas
+<center><img src = "UML/Pessoas.png" widht = 250 height = 250 ></center>
