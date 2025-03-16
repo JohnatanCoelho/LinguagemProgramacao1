@@ -16,3 +16,6 @@
 
 ### Carros
 <center><img src = "UML/Carros.png" widht = 250 height = 250 ></center>
+
+### Animais
+<center><img src = "UML/Animais.png" widht = 250 height = 375 ></center>
