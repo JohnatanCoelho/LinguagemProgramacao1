@@ -5,7 +5,9 @@
 |-------------|------------|----------------|
 |<img src = "Assets/pessoas.png" width = "200" >| <img src = "Assets/carros.png" width = "250">| <img src = "Assets/animais.png" width = "270">|
 
-| **Instrumentos Musicais** | **Animais** | **Bolos** | **Celular** | **Jogo** | **Lugares** | |
+| <center>**Instrumentos Musicais**</center> | **Animais** | **Bolos** | **Celular** | **Jogo** | **Lugares** |
+|---------------------------|-------------|-----------|-------------|----------|-------------|
+|<img src = "Assets/instrumentos.png" width = "200" >|
 
 ## UML
 
