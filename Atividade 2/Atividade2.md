@@ -13,11 +13,11 @@
 
 > <center><strong>Modelar via UML ou outra ferramenta cada classe do item 1, com três métodos e três atributos. Sugestão de ferramenta </strong></center>
 
-### Pessoas
-<center><img src = "UML/Pessoas.png" widht = 250 height = 250 ></center>
+### Pessoa
+<center><img src = "UML/Pessoa.png" widht = 250 height = 250 ></center>
 
-### Carros
-<center><img src = "UML/Carros.png" widht = 250 height = 250 ></center>
+### Carro
+<center><img src = "UML/Carro.png" widht = 250 height = 250 ></center>
 
-### Animais
-<center><img src = "UML/Animais.png" widht = 250 height = 375 ></center>
+### Animal
+<center><img src = "UML/Animal.png" widht = 250 height = 300 ></center>
