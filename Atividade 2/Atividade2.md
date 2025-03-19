@@ -21,3 +21,6 @@
 
 ### Animal
 <center><img src = "UML/Animal.png" widht = 250 height = 300 ></center>
+
+### Instrumento
+<center><img src = "UML/Instrumento.png" widht = 250 height = 316 ></center>
