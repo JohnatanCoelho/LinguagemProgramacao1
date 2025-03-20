@@ -5,10 +5,9 @@
 |-------------|------------|----------------|
 |<img src = "Assets/pessoas.png" width = "200" >| <img src = "Assets/carros.png" width = "250">| <img src = "Assets/animais.png" width = "270">|
 
-| <center>**Instrumentos Musicais**</center> | **Animais** | **Bolos** | **Celular** | **Jogo** | **Lugares** |
+| <center>**Instrumentos Musicais**</center> |<center> **Bolos**</center> | **s** | **Celular** | **Jogo** | **Lugares** |
 |---------------------------|-------------|-----------|-------------|----------|-------------|
-|<img src = "Assets/instrumentos.png" width = "200" >|
-
+|<img src = "Assets/instrumentos.png" width = "200" >|<img src = "Assets/bolos.png" width = "290" >
 ## UML
 
 > <center><strong>Modelar via UML ou outra ferramenta cada classe do item 1, com três métodos e três atributos. Sugestão de ferramenta </strong></center>
@@ -24,3 +23,6 @@
 
 ### Instrumento
 <center><img src = "UML/Instrumento.png" widht = 250 height = 316 ></center>
+
+### Bolo
+<center><img src = "UML/Bolo.png" widht = 200 height = 238 ></center>
