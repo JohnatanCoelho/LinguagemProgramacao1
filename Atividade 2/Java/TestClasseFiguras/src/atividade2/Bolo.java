@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Bolo {
     String nomeBolo;
     ArrayList<String> Ingredientes = new ArrayList<>();
+    String cobertura;
 
     public String getNomeBolo() {
         return nomeBolo;
@@ -36,6 +37,7 @@ public class Bolo {
         }
     }
     public void finalizarBolo(String cobertura){
+        this.cobertura = cobertura;
         System.out.println("Finalizando o bolo " + getNomeBolo() + " com cobertura de " + cobertura);
     }
 

@@ -13,7 +13,10 @@ public class TestClasse{
             System.out.println("2 - Carros");
             System.out.println("3 - Animais");
             System.out.println("4 - Instrumentos");
+            System.out.println("5 - Bolo");
+            System.out.println("6 - Planta");
             System.out.println("0 - Sair");
+
             opcao = entrada.nextInt();
             entrada.nextLine();
         switch (opcao){
@@ -91,6 +94,17 @@ public class TestClasse{
 
                 break;
 
+            case 6:
+                // Planta
+                Planta p1 = new Planta("Rosa", "Angiosperma", "Branca");
+                p1.verificarONivelAgua(entrada);
+                if(p1.getNivelAgua() == 0) {
+                    p1.regar(entrada);
+                    p1.mostrarInformacaoPlanta();
+                }else {
+                System.out.println("Planta com agua");
+                p1.mostrarInformacaoPlanta();
+                }
             case 0:
                 System.out.println("Saindo....");
                 break;
