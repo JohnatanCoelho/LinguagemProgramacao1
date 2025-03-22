@@ -25,4 +25,7 @@
 <center><img src = "UML/Instrumento.png" widht = 250 height = 316 ></center>
 
 ### Bolo
-<center><img src = "UML/Bolo.png" widht = 200 height = 238 ></center>
+<center><img src = "UML/Bolo.png" widht = 250 height = 248 ></center>
+
+### Planta
+<center><img src = "UML/Planta.png" widht = 250 height = 255 ></center>
