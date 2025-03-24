@@ -17,7 +17,7 @@
 |------|
 |<img src = "Assets/camisas.jpg" width = "250" >|
 
-## UML
+## 2 - UML
 
 > <center><strong>Modelar via UML ou outra ferramenta cada classe do item 1, com três métodos e três atributos. Sugestão de ferramenta </strong></center>
 
@@ -50,3 +50,13 @@
 
 ### Camisa
 <center><img src = "UML/Camisa.png" widht = 250 height = 259 ></center>
+
+## 3 e 4 - Java
+
+><strong> 3 - Implementar, usando a Linguagem Java, as classes modeladas no item 2.</strong><br><br>
+> <strong> 4 - Criar uma classe TestaClasse, um objeto de cada classe para teste. <br> - Evocar, pelo menos, dois métodos de cada classe. <br> - Criar menu em loop até o usuário optar por sair.</strong>
+<br>
+
+***Caminho do Java:*** LinguagemProgramacao1/Atividade 2/Java/TestClasseFiguras/src
+
+
