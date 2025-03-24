@@ -39,4 +39,4 @@
 <center><img src = "UML/Livro.png" widht = 250 height = 295 ></center>
 
 ### Time de Futebol
-<center><img src = "UML/TimeDeFutebol.png" widht = 250 height = 295 ></center>
+<center><img src = "UML/TimeDeFutebol.png" widht = 250 height = 270 ></center>

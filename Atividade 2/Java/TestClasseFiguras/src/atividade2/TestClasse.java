@@ -16,6 +16,7 @@ public class TestClasse{
             System.out.println("5 - Bolos");
             System.out.println("6 - Plantas");
             System.out.println("7 - Livros");
+            System.out.println("8 - Times De Futebol");
             System.out.println("0 - Sair");
 
             opcao = entrada.nextInt();
@@ -115,7 +116,11 @@ public class TestClasse{
                 l1.inserirCitacao(entrada);
                 l1.exibirCitacoes(entrada);
                 break;
-
+            case 8:
+                TimeDeFutebol partida = new TimeDeFutebol( "Corinthians", "Neo Quimica Arena", "Palmeiras");
+                partida.perguntarOPlacar(entrada);
+                partida.mostrarPlacar();
+                break;
             case 0:
                 System.out.println("Saindo....");
                 break;

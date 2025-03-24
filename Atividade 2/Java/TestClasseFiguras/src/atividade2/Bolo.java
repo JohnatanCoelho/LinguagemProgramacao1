@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Bolo {
-    String nomeBolo;
-    ArrayList<String> Ingredientes = new ArrayList<>();
-    String cobertura;
+    private String nomeBolo;
+    private ArrayList<String> Ingredientes = new ArrayList<>();
+    private String cobertura;
 
     public String getNomeBolo() {
         return nomeBolo;

@@ -3,10 +3,10 @@ package atividade2;
 import java.util.Scanner;
 
 public class Planta {
-    String nome;
-    String tipo;
-    String cor;
-    int nivelAgua;
+    private String nome;
+    private String tipo;
+    private String cor;
+    private int nivelAgua;
 
     public Planta(String nome, String tipo, String cor){
         this.nome = nome;

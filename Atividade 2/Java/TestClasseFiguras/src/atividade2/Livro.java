@@ -3,12 +3,12 @@ package atividade2;
 import java.util.Scanner;
 
 public class Livro {
-    String nomeLivro;
-    String autor;
-    int anoLancamento;
-    String citacao1;
-    String citacao2;
-    String citacao3;
+    private String nomeLivro;
+    private String autor;
+    private int anoLancamento;
+    private String citacao1;
+    private String citacao2;
+    private String citacao3;
 
     public Livro(String nomeLivro, String autor, int anoLancamento) {
         this.nomeLivro = nomeLivro;
