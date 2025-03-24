@@ -9,9 +9,10 @@
 |---------------------------|-------------|-----------|
 |<img src = "Assets/instrumentos.png" width = "200" >|<img src = "Assets/bolos.png" width = "270" > | <img src = "Assets/plantas.png" width = "270" > |
 
-| <center>Livros</center> | pensando | pensando |
+| <center>Livros</center> | <center>Times de Futebol</center>| pensando |
 |-------------------------|----------|----------|
-|<img src = "Assets/livros.png" width = "200" >|
+|<img src = "Assets/livros.png" width = "200" > | <img src = "Assets/timesFutebol.png" width = "250" height = "120" >
+
 ## UML
 
 > <center><strong>Modelar via UML ou outra ferramenta cada classe do item 1, com três métodos e três atributos. Sugestão de ferramenta </strong></center>
@@ -36,3 +37,6 @@
 
 ### Livro
 <center><img src = "UML/Livro.png" widht = 250 height = 295 ></center>
+
+### Time de Futebol
+<center><img src = "UML/TimeDeFutebol.png" widht = 250 height = 295 ></center>
