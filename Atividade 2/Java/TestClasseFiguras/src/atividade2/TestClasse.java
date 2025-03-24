@@ -13,8 +13,9 @@ public class TestClasse{
             System.out.println("2 - Carros");
             System.out.println("3 - Animais");
             System.out.println("4 - Instrumentos");
-            System.out.println("5 - Bolo");
-            System.out.println("6 - Planta");
+            System.out.println("5 - Bolos");
+            System.out.println("6 - Plantas");
+            System.out.println("7 - Livros");
             System.out.println("0 - Sair");
 
             opcao = entrada.nextInt();
@@ -105,6 +106,16 @@ public class TestClasse{
                 System.out.println("Planta com agua");
                 p1.mostrarInformacaoPlanta();
                 }
+                break;
+
+            case 7:
+                Livro l1 = new Livro("A Arte da Guerra", "Sun Tzu", 1521);
+                l1.exibirLivro();
+                System.out.println("");
+                l1.inserirCitacao(entrada);
+                l1.exibirCitacoes(entrada);
+                break;
+
             case 0:
                 System.out.println("Saindo....");
                 break;
