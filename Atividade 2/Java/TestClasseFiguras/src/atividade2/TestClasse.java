@@ -8,7 +8,8 @@ public class TestClasse{
         Scanner entrada = new Scanner(System.in);
         int opcao = 1;
         while(opcao  > 0){
-            System.out.println("Classes:   ");
+            System.out.println("========================");
+            System.out.println("Classes:       ");
             System.out.println("1 - Pessoas ");
             System.out.println("2 - Carros");
             System.out.println("3 - Animais");
@@ -17,8 +18,10 @@ public class TestClasse{
             System.out.println("6 - Plantas");
             System.out.println("7 - Livros");
             System.out.println("8 - Times De Futebol");
+            System.out.println("9 - Cadernos");
+            System.out.println("10 - Camisas ");
             System.out.println("0 - Sair");
-
+            System.out.println("========================");
             opcao = entrada.nextInt();
             entrada.nextLine();
         switch (opcao){
@@ -98,29 +101,44 @@ public class TestClasse{
 
             case 6:
                 // Planta
-                Planta p1 = new Planta("Rosa", "Angiosperma", "Branca");
-                p1.verificarONivelAgua(entrada);
-                if(p1.getNivelAgua() == 0) {
-                    p1.regar(entrada);
-                    p1.mostrarInformacaoPlanta();
+                Planta pl1 = new Planta("Rosa", "Angiosperma", "Branca");
+                pl1.verificarONivelAgua(entrada);
+                if(pl1.getNivelAgua() == 0) {
+                    pl1.regar(entrada);
+                    pl1.mostrarInformacaoPlanta();
                 }else {
                 System.out.println("Planta com agua");
-                p1.mostrarInformacaoPlanta();
+                pl1.mostrarInformacaoPlanta();
                 }
                 break;
 
             case 7:
-                Livro l1 = new Livro("A Arte da Guerra", "Sun Tzu", 1521);
-                l1.exibirLivro();
+                Livro li1 = new Livro("A Arte da Guerra", "Sun Tzu", 1521);
+                li1.exibirLivro();
                 System.out.println("");
-                l1.inserirCitacao(entrada);
-                l1.exibirCitacoes(entrada);
+                li1.inserirCitacao(entrada);
+                li1.exibirCitacoes(entrada);
                 break;
+
             case 8:
                 TimeDeFutebol partida = new TimeDeFutebol( "Corinthians", "Neo Quimica Arena", "Palmeiras");
                 partida.perguntarOPlacar(entrada);
                 partida.mostrarPlacar();
                 break;
+
+            case 9:
+                    Caderno caderno1 = new Caderno("20 matérias", "azul", 320, "Caderno de estudo");
+                    caderno1.escreverNoCaderno(entrada);
+                    caderno1.arrancarPaginas(entrada);
+                    caderno1.trocarCorCapa(entrada);
+                break;
+
+            case 10:
+                Camisa camisa1 = new Camisa("M", "Preta", "Polo", true);
+                camisa1.lavar();
+                camisa1.vestir(entrada);
+                break;
+
             case 0:
                 System.out.println("Saindo....");
                 break;

@@ -9,9 +9,13 @@
 |---------------------------|-------------|-----------|
 |<img src = "Assets/instrumentos.png" width = "200" >|<img src = "Assets/bolos.png" width = "270" > | <img src = "Assets/plantas.png" width = "270" > |
 
-| <center>Livros</center> | <center>Times de Futebol</center>| pensando |
+| <center>Livros</center> | <center>Times de Futebol</center>| <center>Cadernos</center> |
 |-------------------------|----------|----------|
-|<img src = "Assets/livros.png" width = "200" > | <img src = "Assets/timesFutebol.png" width = "250" height = "120" >
+|<img src = "Assets/livros.png" width = "200" > | <img src = "Assets/timesFutebol.png" width = "250" height = "120" > | <img src = "Assets/cadernos.png" width = "200" >
+
+|<center> Camisas</center>|
+|------|
+|<img src = "Assets/camisas.jpg" width = "250" >|
 
 ## UML
 
@@ -40,3 +44,9 @@
 
 ### Time de Futebol
 <center><img src = "UML/TimeDeFutebol.png" widht = 250 height = 270 ></center>
+
+### Caderno
+<center><img src = "UML/Caderno.png" widht = 250 height = 260 ></center>
+
+### Camisa
+<center><img src = "UML/Camisa.png" widht = 250 height = 259 ></center>
