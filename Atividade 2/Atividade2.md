@@ -59,4 +59,8 @@
 
 ***Caminho do Java:*** LinguagemProgramacao1/Atividade 2/Java/TestClasseFiguras/src
 
+## Atividade das Frações 
+***Caminho do Java:*** LinguagemProgramacao1/Atividade 2/Java/TestOperacaoFracao
+
+
 
