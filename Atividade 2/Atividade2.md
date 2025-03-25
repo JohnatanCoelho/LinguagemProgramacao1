@@ -62,5 +62,7 @@
 ## Atividade das Frações 
 ***Caminho do Java:*** LinguagemProgramacao1/Atividade 2/Java/TestOperacaoFracao
 
+***Test de Mesa:***  LinguagemProgramacao1/Atividade 2/TesteMesa/
+
 
 
