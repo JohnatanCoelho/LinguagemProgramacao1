@@ -7,7 +7,7 @@
 
 # 🗂️TAREFA 2 - LP1
 
-- Os exercícios estão na pasta "Atividade 2"
+- Os exercícios estão na pasta "Atividade_2"
 
 # 🗂️ TAREFA 3 - LP1
 
