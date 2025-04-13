@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.CarroController">
+   <children>
+      <Label layoutX="270.0" layoutY="52.0" text="Carro">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNomeCarro" layoutX="179.0" layoutY="110.0" prefHeight="26.0" prefWidth="242.0" promptText="Informe o nome" />
+      <Label layoutX="128.0" layoutY="115.0" text="Nome" />
+      <Label layoutX="128.0" layoutY="165.0" text="Marca" />
+      <TextField fx:id="txtMarcaCarro" layoutX="179.0" layoutY="161.0" prefHeight="26.0" prefWidth="242.0" promptText="Informe a marca" />
+      <Label layoutX="128.0" layoutY="205.0" text="Ligar" />
+      <RadioButton fx:id="rdLigar" layoutX="183.0" layoutY="205.0" mnemonicParsing="false" text="Ligar" />
+      <Label layoutX="176.0" layoutY="373.0" text="Ponteiro: " />
+      <Button fx:id="btnEnviarDadosCarro" layoutX="202.0" layoutY="237.0" mnemonicParsing="false" onAction="#PegarDadosCarro" prefHeight="26.0" prefWidth="192.0" text="Enviar" />
+      <Label fx:id="lblOnEOff" layoutX="240.0" layoutY="336.0" text="Ligado ou Desligado">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="272.0" layoutY="291.0" text="Status">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblView" layoutX="223.0" layoutY="409.0" prefHeight="126.0" prefWidth="150.0">
+        <columns>
+          <TableColumn fx:id="tblNomeCarro" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="tblMarca" prefWidth="75.0" text="Marca" />
+        </columns>
+      </TableView>
+      <Slider fx:id="sldNivel" layoutX="230.0" layoutY="374.0" prefHeight="14.0" prefWidth="150.0" />
+      <Button fx:id="voltar" layoutX="518.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="26.0" prefWidth="68.0" text="Voltar" />
+   </children>
+</AnchorPane>

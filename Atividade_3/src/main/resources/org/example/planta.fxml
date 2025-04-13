@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #bdecb6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PlantaController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/plantas.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="248.0" layoutY="57.0" prefHeight="46.0" prefWidth="102.0" style="-fx-text-fill: white;" text="Planta" textFill="white" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="192.0" text="Nome">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="185.0" layoutY="184.0" prefHeight="35.0" prefWidth="228.0" promptText="Informe o nome" />
+      <Label layoutX="137.0" layoutY="240.0" text="Tipo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTipo" layoutX="186.0" layoutY="232.0" prefHeight="35.0" prefWidth="228.0" promptText="Informe o tipo" />
+      <Label layoutX="137.0" layoutY="290.0" text="Cor">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCor" layoutX="186.0" layoutY="282.0" prefHeight="35.0" prefWidth="228.0" promptText="Informe a cor" />
+      <Label layoutX="102.0" layoutY="345.0" text="Nível água">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNivel" layoutX="185.0" layoutY="337.0" prefHeight="35.0" prefWidth="228.0" promptText="Informe o nível de água" />
+      <Button fx:id="btnEnviar" layoutX="453.0" layoutY="259.0" mnemonicParsing="false" onAction="#enviarDados" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" />
+      <Button fx:id="btnNivel" layoutX="453.0" layoutY="331.0" mnemonicParsing="false" onAction="#aumentarAgua" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Regar" />
+      <Label fx:id="statusPlanta" layoutX="253.0" layoutY="402.0" text=".....">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="401.0" text="Status:">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="435.0" prefHeight="35.0" prefWidth="90.0" text="Nível água:">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="nivelAguaResultado" layoutX="255.0" layoutY="440.0" text=".....">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtAreaDsc" layoutX="69.0" layoutY="483.0" prefHeight="90.0" prefWidth="462.0" promptText="Descrição da Planta" />
+   </children>
+</AnchorPane>
