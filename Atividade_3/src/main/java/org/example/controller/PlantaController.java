@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class PlantaController {
 
     @FXML
@@ -35,6 +37,9 @@ public class PlantaController {
 
     @FXML
     private TextArea txtAreaDsc;
+
+    @FXML
+    private Button btnVoltar;
 
     Planta novaPlanta;
 
@@ -72,5 +77,11 @@ public class PlantaController {
         statusPlanta.setText(novaPlanta.verificarONivelAgua());
         nivelAguaResultado.setText(Integer.toString(nivelAgua));
     }
+
+    @FXML
+    void voltarTelaPrincipal(ActionEvent event) throws IOException {
+        org.example.App.setRoot("telaPrincipal");
+    }
+
 
 }

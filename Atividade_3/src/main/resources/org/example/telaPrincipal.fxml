@@ -7,54 +7,91 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TelaPrincipalController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #779ecb;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.TelaPrincipalController">
    <children>
-      <Label layoutX="148.0" layoutY="86.0" text="Bem-Vindo a nossa aplicação!">
+      <Label layoutX="76.0" layoutY="95.0" text="Bem-Vindo a nossa aplicação!" textFill="WHITE">
          <font>
-            <Font name="Berlin Sans FB Bold" size="23.0" />
+            <Font name="Arial Bold" size="31.0" />
          </font>
       </Label>
-      <Label layoutX="231.0" layoutY="149.0" text="Escolha uma opção">
+      <Label layoutX="207.0" layoutY="147.0" text="Escolha uma opção" textFill="WHITE">
          <font>
-            <Font size="16.0" />
+            <Font name="Arial" size="21.0" />
          </font>
       </Label>
       <HBox layoutX="67.0" layoutY="227.0" prefHeight="34.0" prefWidth="466.0">
          <children>
-            <Button fx:id="btnPessoa" mnemonicParsing="false" onAction="#trocaTelaPessoa" prefHeight="26.0" prefWidth="80.0" text="Pessoa">
+            <Button fx:id="btnPessoa" mnemonicParsing="false" onAction="#trocaTelaPessoa" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Pessoa" textFill="WHITE">
                <HBox.margin>
                   <Insets />
-               </HBox.margin></Button>
-            <Button fx:id="btnCarro" mnemonicParsing="false" onAction="#trocaTelaCarro" prefHeight="26.0" prefWidth="80.0" text="Carro">
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnCarro" mnemonicParsing="false" onAction="#trocaTelaCarro" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Carro" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
             </Button>
-            <Button fx:id="btnAnimal" mnemonicParsing="false" onAction="#trocaTelaAnimal" prefHeight="26.0" prefWidth="80.0" text="Animal">
+            <Button fx:id="btnAnimal" mnemonicParsing="false" onAction="#trocaTelaAnimal" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Animal" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
             </Button>
-            <Button fx:id="btnInstrumento" mnemonicParsing="false" onAction="#trocaTelaInstrumento" prefHeight="26.0" prefWidth="92.0" text="Instrumento">
+            <Button fx:id="btnInstrumento" mnemonicParsing="false" onAction="#trocaTelaInstrumento" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #3065ac; -fx-font-weight: bold;" text="Instrumento" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
             </Button>
-            <Button fx:id="btnBolo" mnemonicParsing="false" onAction="#trocaTelaBolo" prefHeight="26.0" prefWidth="92.0" text="Bolo">
+            <Button fx:id="btnBolo" mnemonicParsing="false" onAction="#trocaTelaBolo" prefHeight="26.0" prefWidth="92.0" style="-fx-background-color: #3065ac;" text="Bolo" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
             </Button>
          </children>
       </HBox>
       <HBox layoutX="66.0" layoutY="271.0" prefHeight="34.0" prefWidth="466.0">
          <children>
-            <Button fx:id="btnPlanta" mnemonicParsing="false" onAction="#trocaTelaPlanta" prefHeight="26.0" prefWidth="80.0" text="Planta">
+            <Button fx:id="btnPlanta" mnemonicParsing="false" onAction="#trocaTelaPlanta" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Planta" textFill="WHITE">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
             </Button>
-            <Button fx:id="btnLivro" mnemonicParsing="false" onAction="#trocaTelaLivro" prefHeight="26.0" prefWidth="80.0" text="Livro">
+            <Button fx:id="btnLivro" mnemonicParsing="false" onAction="#trocaTelaLivro" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Livro" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnTimes" mnemonicParsing="false" onAction="#trocaTelaTimes" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Times" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCaderno" mnemonicParsing="false" onAction="#trocaTelaCaderno" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #3065ac;" text="Caderno" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>

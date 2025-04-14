@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #84b6f4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.CadernoController">
+   <children>
+      <ImageView fitHeight="119.0" fitWidth="123.0" layoutX="40.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/caderno.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="55.0" text="Caderno" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTamanho" layoutX="189.0" layoutY="136.0" prefHeight="38.0" prefWidth="222.0" promptText="Informe o tamanho" />
+      <Label layoutX="117.0" layoutY="147.0" text="Tamanho">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="195.0" text="Cor">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPagina" layoutX="189.0" layoutY="236.0" prefHeight="38.0" prefWidth="222.0" promptText="Informe o número de páginas" />
+      <TextField fx:id="txtTipo" layoutX="189.0" layoutY="289.0" prefHeight="38.0" prefWidth="222.0" promptText="Informe o tipo" />
+      <Label layoutX="121.0" layoutY="247.0" text="Páginas">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="300.0" text="Tipo">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtArea" layoutX="78.0" layoutY="350.0" prefHeight="200.0" prefWidth="200.0" promptText="Escrever no caderno" />
+      <Rectangle fx:id="capa" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="336.0" layoutY="350.0" stroke="WHITE" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="419.0" layoutY="330.0" text="Capa">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="corCombo" layoutX="189.0" layoutY="190.0" prefHeight="26.0" prefWidth="222.0" promptText="Selecione" />
+      <Button fx:id="btnVoltar" layoutX="497.0" layoutY="16.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="46.0" prefWidth="90.0" style="-fx-background-color: blue; -fx-border-radius: 50; -fx-border-color: #84b6f4; -fx-background-radius: 50;" text="Voltar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnviar" layoutX="463.0" layoutY="193.0" mnemonicParsing="false" onAction="#enviarDadosCaderno" prefHeight="46.0" prefWidth="90.0" style="-fx-background-color: blue; -fx-border-radius: 50; -fx-border-color: #84b6f4; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnviar1" layoutX="113.0" layoutY="553.0" mnemonicParsing="false" onAction="#TrocaPagina" prefHeight="38.0" prefWidth="123.0" style="-fx-background-color: blue; -fx-border-radius: 50; -fx-border-color: #84b6f4; -fx-background-radius: 50;" text="Próxima página" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="13.0" layoutY="406.0" text="Páginas">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalPg" layoutX="32.0" layoutY="434.0" text="....">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnArrancar" layoutX="446.0" layoutY="251.0" mnemonicParsing="false" onAction="#arrancarUmaFolhaCaderno" prefHeight="46.0" prefWidth="123.0" style="-fx-background-color: blue; -fx-border-radius: 50; -fx-border-color: #84b6f4; -fx-background-radius: 50;" text="Arrancar Página" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

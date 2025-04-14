@@ -68,5 +68,6 @@
          </font>
       </Label>
       <TextArea fx:id="txtAreaDsc" layoutX="69.0" layoutY="483.0" prefHeight="90.0" prefWidth="462.0" promptText="Descrição da Planta" />
+      <Button fx:id="btnVoltar" layoutX="480.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Voltar" />
    </children>
 </AnchorPane>
