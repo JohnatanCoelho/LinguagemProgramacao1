@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #d2b48c;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LivroController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="205.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/livros.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="253.0" layoutY="71.0" text="Livros" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="210.0" text="Nome">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="87.0" layoutY="201.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe o nome" style="-fx-border-color: brown;" />
+      <Label layoutX="37.0" layoutY="323.0" text="Autor">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAutor" layoutX="87.0" layoutY="314.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe o autor" style="-fx-border-color: brown;" />
+      <Label layoutX="42.0" layoutY="268.0" text="Ano">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAno" layoutX="87.0" layoutY="259.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe o ano" style="-fx-border-color: brown;" />
+      <Label layoutX="292.0" layoutY="211.0" text="1º Citação">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCitacao" layoutX="360.0" layoutY="201.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe a citação" style="-fx-border-color: brown;" />
+      <Button fx:id="btnEnviar" layoutX="119.0" layoutY="363.0" mnemonicParsing="false" onAction="#enviarDadosLivro" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Enviar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCitacao" layoutX="397.0" layoutY="363.0" mnemonicParsing="false" onAction="#enviarCitacao" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Citação" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtAreaDesc" layoutX="56.0" layoutY="425.0" prefHeight="122.0" prefWidth="228.0" promptText="Descrição do Livro" style="-fx-border-color: brown;" />
+      <TextArea fx:id="txtAreaCitacao" layoutX="334.0" layoutY="425.0" prefHeight="122.0" prefWidth="228.0" promptText="Citação do Livro" style="-fx-border-color: brown;" />
+      <Button fx:id="btnVolta" layoutX="491.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltaTelaPrincipal" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Voltar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblAviso" layoutX="53.0" layoutY="561.0" text="AVISO">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="269.0" text="2º Citação">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCitacao2" layoutX="360.0" layoutY="259.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe a citação" style="-fx-border-color: brown;" />
+      <TextField fx:id="txtCitacao3" layoutX="360.0" layoutY="314.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe a citação" style="-fx-border-color: brown;" />
+      <Label layoutX="292.0" layoutY="324.0" text="3º Citação">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

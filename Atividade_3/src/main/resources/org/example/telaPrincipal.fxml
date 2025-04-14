@@ -54,6 +54,11 @@
                   <Insets />
                </HBox.margin>
             </Button>
+            <Button fx:id="btnLivro" mnemonicParsing="false" onAction="#trocaTelaLivro" prefHeight="26.0" prefWidth="80.0" text="Livro">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
          </children>
       </HBox>
    </children>
