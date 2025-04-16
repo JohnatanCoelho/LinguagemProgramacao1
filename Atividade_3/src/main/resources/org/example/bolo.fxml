@@ -24,10 +24,11 @@
          </font>
       </Label>
       <TextField fx:id="txtNomeBolo" layoutX="148.0" layoutY="177.0" prefHeight="36.0" prefWidth="243.0" promptText="Informe o nome " />
-      <Label layoutX="86.0" layoutY="186.0" text="Nome" />
-      <Label layoutX="72.0" layoutY="235.0" text="Ingrediente" />
+      <Label layoutX="86.0" layoutY="186.0" text="Nome">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></Label>
       <TextField fx:id="txtIngrediente" layoutX="148.0" layoutY="226.0" prefHeight="36.0" prefWidth="243.0" promptText="Informe o ingrediente" />
-      <Label layoutX="76.0" layoutY="330.0" text="Cobertura" />
       <TextField fx:id="txtCobertura" layoutX="148.0" layoutY="321.0" prefHeight="36.0" prefWidth="243.0" promptText="Informe a cobertura" />
       <Button fx:id="btnAdicionar" layoutX="414.0" layoutY="222.0" mnemonicParsing="false" onAction="#adicionarIngredientes" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: #dbb8e3; -fx-border-color: black; -fx-border-radius: 8px;" text="Adicionar">
          <font>
@@ -46,7 +47,6 @@
         </columns>
       </TableView>
       <TextField fx:id="txtQuantidade" layoutX="148.0" layoutY="273.0" prefHeight="36.0" prefWidth="243.0" promptText="Informe a quantidade" />
-      <Label layoutX="72.0" layoutY="282.0" text="Quantidade" />
       <Label layoutX="414.0" layoutY="313.0" text="Nome: ">
          <font>
             <Font name="System Bold Italic" size="12.0" />
@@ -57,5 +57,25 @@
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
       <Label fx:id="lblCobertura" layoutX="486.0" layoutY="339.0" text="...." />
+      <Button fx:id="btnVoltar" layoutX="483.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltaTelaPrincipal" prefHeight="42.0" prefWidth="102.0" style="-fx-background-color: #dbb8e3; -fx-border-color: black; -fx-border-radius: 8px;" text="Voltar">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="69.0" layoutY="236.0" text="Ingrediente">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="283.0" text="Quantidade">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="331.0" text="Cobertura">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

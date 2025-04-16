@@ -32,6 +32,9 @@ public class TelaPrincipalController {
     private Button btnTimes;
 
     @FXML
+    private Button btnCamisa;
+
+    @FXML
     void trocaTelaCarro(ActionEvent event) throws IOException {
         App.setRoot("carro");
     }
@@ -73,5 +76,10 @@ public class TelaPrincipalController {
     @FXML
     void trocaTelaCaderno(ActionEvent event) throws IOException{
         App.setRoot("caderno");
+    }
+
+    @FXML
+    void trocaTelaCamisa(ActionEvent event) throws IOException {
+        App.setRoot("camisa");
     }
 }

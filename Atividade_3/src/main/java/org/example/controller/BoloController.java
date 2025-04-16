@@ -7,6 +7,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.io.IOException;
+
 public class BoloController {
 
     @FXML
@@ -66,6 +68,12 @@ public class BoloController {
         txtCobertura.setText("");
 
     }
+
+    @FXML
+    void voltaTelaPrincipal(ActionEvent event) throws IOException {
+        org.example.App.setRoot("telaPrincipal");
+    }
+
     @FXML
     void initialize(){
         //Indicando os valores na tabela
