@@ -45,8 +45,14 @@
          </font>
       </Label>
       <TextField fx:id="txtNivel" layoutX="185.0" layoutY="337.0" prefHeight="35.0" prefWidth="228.0" promptText="Informe o nível de água" />
-      <Button fx:id="btnEnviar" layoutX="453.0" layoutY="259.0" mnemonicParsing="false" onAction="#enviarDados" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" />
-      <Button fx:id="btnNivel" layoutX="453.0" layoutY="331.0" mnemonicParsing="false" onAction="#aumentarAgua" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Regar" />
+      <Button fx:id="btnEnviar" layoutX="453.0" layoutY="259.0" mnemonicParsing="false" onAction="#enviarDados" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnNivel" layoutX="453.0" layoutY="331.0" mnemonicParsing="false" onAction="#aumentarAgua" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Regar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
       <Label fx:id="statusPlanta" layoutX="253.0" layoutY="402.0" text=".....">
          <font>
             <Font name="Arial" size="15.0" />
@@ -68,6 +74,9 @@
          </font>
       </Label>
       <TextArea fx:id="txtAreaDsc" layoutX="69.0" layoutY="483.0" prefHeight="90.0" prefWidth="462.0" promptText="Descrição da Planta" />
-      <Button fx:id="btnVoltar" layoutX="480.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Voltar" />
+      <Button fx:id="btnVoltar" layoutX="480.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="46.0" prefWidth="102.0" style="-fx-border-color: #bdecb6; -fx-background-color: green; -fx-border-radius: 50; -fx-background-radius: 50;" text="Voltar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>
