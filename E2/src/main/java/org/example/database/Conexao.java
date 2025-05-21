@@ -9,16 +9,18 @@ public class Conexao {
         private static String host = "localhost";
         private static String port = "3306";
         private static String name = "lp1";
-        private static String user = "root";
-        private static String password = "xxxxx";
+        private static String user = "userlp";
+        private static String password = "lp123";
 
         static String url = "jdbc:mysql://" + host + ":" + port + "/" + name;
 
         public static Connection conectar(){
             try{
                 return DriverManager.getConnection(url, user, password);
+
             } catch (SQLException e) {
-                System.out.println("Não foi possível conectar com o banco: " +  e.getMessage());
+                System.out.println("Erro: " +  e.getMessage());
+                e.printStackTrace();
                 return null;
             }
 

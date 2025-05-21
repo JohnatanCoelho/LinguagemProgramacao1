@@ -8,6 +8,6 @@ module org.example {
     exports org.example;
     exports org.example.controller;
     opens org.example.controller to javafx.fxml;
-    exports org.example.Database;
-    opens org.example.Database to javafx.fxml;
+    exports org.example.database;
+    opens org.example.database to javafx.fxml;
 }
