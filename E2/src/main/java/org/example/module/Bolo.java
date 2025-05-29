@@ -1,6 +1,4 @@
-package org.example.controller;
-
-import java.util.ArrayList;
+package org.example.module;
 
 public class Bolo {
     private String nomeBolo;

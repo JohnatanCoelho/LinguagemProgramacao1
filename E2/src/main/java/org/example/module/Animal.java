@@ -1,4 +1,4 @@
-package org.example.controller;
+package org.example.module;
 
 public class Animal {
     private String animal;

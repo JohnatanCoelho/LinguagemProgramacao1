@@ -25,19 +25,20 @@
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font></Label>
-      <Button fx:id="btnEnviar" layoutX="192.0" layoutY="343.0" mnemonicParsing="false" onAction="#pegarDadosPessoa" prefHeight="36.0" prefWidth="214.0" style="-fx-background-color: #db5858; -fx-border-radius: 50; -fx-background-radius: 50; -fx-border-color: #993e3c;" text="Enviar" textFill="WHITE">
+      <Button fx:id="btnEnviar" layoutX="72.0" layoutY="312.0" mnemonicParsing="false" onAction="#pegarDadosPessoa" prefHeight="36.0" prefWidth="146.0" style="-fx-background-color: #db5858; -fx-border-radius: 50; -fx-background-radius: 50; -fx-border-color: #993e3c;" text="Enviar" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font>
       </Button>
-      <TableView fx:id="tblView" layoutX="79.0" layoutY="407.0" prefHeight="154.0" prefWidth="227.0">
+      <TableView fx:id="tblView" layoutX="62.0" layoutY="407.0" onMouseClicked="#pegarLinha" prefHeight="154.0" prefWidth="298.0">
         <columns>
+            <TableColumn fx:id="tblId" prefWidth="75.0" text="id" />
           <TableColumn fx:id="tblNome" prefWidth="75.0" text="Nome" />
           <TableColumn fx:id="tblSexo" prefWidth="75.0" text="Sexo" />
             <TableColumn fx:id="tblIdade" prefWidth="75.0" text="Idade" />
         </columns>
       </TableView>
-      <TextArea fx:id="txtAreaAcao" layoutX="335.0" layoutY="407.0" prefHeight="154.0" prefWidth="178.0" />
+      <TextArea fx:id="txtAreaAcao" layoutX="375.0" layoutY="407.0" prefHeight="154.0" prefWidth="178.0" />
       <Button fx:id="voltar" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="32.0" prefWidth="95.0" style="-fx-border-color: #993e3c; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #db5858;" text="Voltar" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="14.0" />
@@ -57,5 +58,15 @@
             <Image url="@image/pessoas.jpg" />
          </image>
       </ImageView>
+      <Button fx:id="btnEnviar1" layoutX="233.0" layoutY="312.0" mnemonicParsing="false" onAction="#atualizarPessoa" prefHeight="36.0" prefWidth="146.0" style="-fx-background-color: #db5858; -fx-border-radius: 50; -fx-background-radius: 50; -fx-border-color: #993e3c;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnviar11" layoutX="391.0" layoutY="312.0" mnemonicParsing="false" onAction="#deletarPessoas" prefHeight="36.0" prefWidth="146.0" style="-fx-background-color: #db5858; -fx-border-radius: 50; -fx-background-radius: 50; -fx-border-color: #993e3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

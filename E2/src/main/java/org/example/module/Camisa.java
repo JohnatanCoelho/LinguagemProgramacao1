@@ -1,6 +1,4 @@
-package org.example.controller;
-
-import java.util.Scanner;
+package org.example.module;
 
 public class Camisa{
     private String tamanho;

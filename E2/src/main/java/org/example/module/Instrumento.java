@@ -1,9 +1,8 @@
-package org.example.controller;
+package org.example.module;
 
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Instrumento {
     private String nomeInstrumento;

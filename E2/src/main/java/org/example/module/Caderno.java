@@ -1,9 +1,7 @@
-package org.example.controller;
+package org.example.module;
 
 import javafx.fxml.FXML;
-import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import java.util.Scanner;
 
 public class Caderno {
     private String tamanho;
