@@ -100,6 +100,9 @@ public class PessoaController {
 
     @FXML
     void pegarLinha(MouseEvent event) {
+
+        /* Método que pega os dados da tabela, quando o usuário seleciona a linha*/
+
         int i = tblView.getSelectionModel().getSelectedIndex();
 
         pessoaDalinha = tblView.getItems().get(i);
@@ -108,10 +111,16 @@ public class PessoaController {
         textSexo.setText(pessoaDalinha.getSexo());
         textIdade.setText(Integer.toString(pessoaDalinha.getIdade()));
 
+        // Atualiza a área de texto com a pessoa selecionada
+        txtAreaAcao.setText(pessoaDalinha.getNome() + " está caminhando!\n"
+                + pessoaDalinha.getNome() + " está sentado!\n"
+                + pessoaDalinha.getNome() + " está comendo!");
+
     }
 
     @FXML
     void atualizarPessoa(ActionEvent event) {
+        /* Método de atualizar pessoas da lista da tabela*/
         if(pessoaDalinha != null){
             // Pegando os novos dados e mandando para o dao
             pessoaDao.updatePessoa(pessoaDalinha.getId(), textNome.getText(),
@@ -131,6 +140,9 @@ public class PessoaController {
 
     @FXML
     void deletarPessoas(ActionEvent event) {
+
+        /*Método de deletar a pessoa*/
+
         if (pessoaDalinha != null){
 
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Deseja excluir mesmo?",ButtonType.YES, ButtonType.NO);
