@@ -11,6 +11,7 @@ import org.example.dao.DaoPessoa;
 import org.example.module.Pessoa;
 
 import java.io.IOException;
+import java.net.Inet4Address;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -21,7 +22,7 @@ public class PessoaController {
     private Button btnEnviar;
 
     @FXML
-    private TableColumn<?, ?> tblId;
+    private TableColumn<Pessoa, Integer> tblId;
 
     @FXML
     private TableColumn<Pessoa, Integer> tblIdade;

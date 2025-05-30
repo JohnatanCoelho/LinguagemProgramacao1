@@ -38,7 +38,7 @@
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font></Label>
-      <Button fx:id="btnEnviarDadosCarro" layoutX="201.0" layoutY="293.0" mnemonicParsing="false" onAction="#PegarDadosCarro" prefHeight="26.0" prefWidth="192.0" style="-fx-border-color: #3b2770; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #7e71a6;" text="Enviar" textFill="WHITE">
+      <Button fx:id="btnEnviarDadosCarro" layoutX="94.0" layoutY="292.0" mnemonicParsing="false" onAction="#PegarDadosCarro" prefHeight="36.0" prefWidth="138.0" style="-fx-border-color: #3b2770; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #7e71a6;" text="Enviar" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font></Button>
@@ -52,8 +52,9 @@
             <Font name="Arial Bold" size="18.0" />
          </font>
       </Label>
-      <TableView fx:id="tblView" layoutX="218.0" layoutY="453.0" prefHeight="126.0" prefWidth="171.0">
+      <TableView fx:id="tblView" layoutX="174.0" layoutY="446.0" onMouseClicked="#pegarLinha" prefHeight="126.0" prefWidth="252.0">
         <columns>
+            <TableColumn fx:id="tblId" prefWidth="84.0" text="Id" />
           <TableColumn fx:id="tblNomeCarro" prefWidth="84.0" text="Nome" />
           <TableColumn fx:id="tblMarca" prefWidth="83.20001220703125" text="Marca" />
         </columns>
@@ -73,5 +74,15 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
+      <Button fx:id="btnAtualizar" layoutX="238.0" layoutY="292.0" mnemonicParsing="false" onAction="#atualizarCarro" prefHeight="36.0" prefWidth="138.0" style="-fx-border-color: #3b2770; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #7e71a6;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAtualizar1" layoutX="382.0" layoutY="292.0" mnemonicParsing="false" onAction="#deletarCarro" prefHeight="36.0" prefWidth="138.0" style="-fx-border-color: #3b2770; -fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: #7e71a6;" text="Deletar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

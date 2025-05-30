@@ -1,14 +1,15 @@
 package org.example.module;
 
 public class Animal {
+    private Integer id;
     private String animal;
     private String nome;
     private String tipo;
-    private int idade;
+    private Integer idade;
     private String costumeAnimal;
     private String movimento;
 
-    public Animal(String animal, String nome, String tipo, int idade, String costume, String movimento){
+    public Animal(String animal, String nome, String tipo, Integer idade, String costume, String movimento){
         this.animal = animal;
         this.nome = nome;
         this. tipo = tipo;

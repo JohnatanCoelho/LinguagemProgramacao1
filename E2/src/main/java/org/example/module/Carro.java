@@ -1,15 +1,19 @@
 package org.example.module;
 
 public class Carro {
+    private Integer id;
     private String nome;
     private String marca;
     private boolean ligado;
     private int ponteiro;
 
-    public Carro(String nome, String marca){
+    public Carro(Integer id, String nome, String marca){
+        this.id = id;
         this.nome = nome;
         this.marca = marca;
     }
+
+    public Integer getId(){ return id; }
 
     public String getNome() {
         return nome;
