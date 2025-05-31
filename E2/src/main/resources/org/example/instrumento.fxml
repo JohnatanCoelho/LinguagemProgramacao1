@@ -4,6 +4,8 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -28,7 +30,7 @@
          </font></CheckBox>
       <Slider fx:id="sliderVolume" layoutX="207.0" layoutY="277.0" onDragDetected="#mudarVolume" prefHeight="14.0" prefWidth="162.0" />
       <TextField fx:id="txtCaminho" layoutX="199.0" layoutY="316.0" prefHeight="36.0" prefWidth="218.0" promptText="Informe o caminho" />
-      <Button fx:id="btnEnviar" layoutX="218.0" layoutY="387.0" mnemonicParsing="false" onAction="#enviarDados" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: #46220f; -fx-border-color: #aa7444; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
+      <Button fx:id="btnEnviar" layoutX="100.0" layoutY="389.0" mnemonicParsing="false" onAction="#enviarDados" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #46220f; -fx-border-color: #aa7444; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font></Button>
@@ -37,15 +39,15 @@
             <Font name="Arial Bold" size="34.0" />
          </font>
       </Label>
-      <Button fx:id="btnPlay" layoutX="349.0" layoutY="461.0" mnemonicParsing="false" onAction="#playSom" prefHeight="35.0" prefWidth="140.0" style="-fx-border-color: #aa7444; -fx-background-color: #46220f; -fx-border-radius: 50; -fx-background-radius: 50;" text="Play" textFill="WHITE">
+      <Button fx:id="btnPlay" layoutX="456.0" layoutY="216.0" mnemonicParsing="false" onAction="#playSom" prefHeight="35.0" prefWidth="119.0" style="-fx-border-color: #aa7444; -fx-background-color: #46220f; -fx-border-radius: 50; -fx-background-radius: 50;" text="▶" textFill="WHITE">
          <font>
-            <Font name="Arial Bold" size="15.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font></Button>
-      <Button fx:id="btnPause" layoutX="131.0" layoutY="461.0" mnemonicParsing="false" onAction="#pauseSom" prefHeight="35.0" prefWidth="140.0" style="-fx-border-color: #aa7444; -fx-background-color: #46220f; -fx-border-radius: 50; -fx-background-radius: 50;" text="Pause" textFill="WHITE">
+      <Button fx:id="btnPause" layoutX="456.0" layoutY="271.0" mnemonicParsing="false" onAction="#pauseSom" prefHeight="35.0" prefWidth="119.0" style="-fx-border-color: #aa7444; -fx-background-color: #46220f; -fx-border-radius: 50; -fx-background-radius: 50;" text="⏸" textFill="WHITE">
          <font>
-            <Font name="Arial Bold" size="15.0" />
+            <Font name="Arial Bold" size="20.0" />
          </font></Button>
-      <Label fx:id="lblVol" layoutX="275.0" layoutY="531.0" text="VOLUME" textFill="WHITE">
+      <Label fx:id="lblVol" layoutX="486.0" layoutY="326.0" text="VOLUME" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font></Label>
@@ -63,5 +65,26 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
+      <Label layoutX="467.0" layoutY="319.0" prefHeight="19.0" prefWidth="17.0" text="🔈" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAtualizar" layoutX="241.0" layoutY="389.0" mnemonicParsing="false" onAction="#atualizarInstrumento" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #46220f; -fx-border-color: #aa7444; -fx-border-radius: 50; -fx-background-radius: 50;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDeletar" layoutX="384.0" layoutY="389.0" mnemonicParsing="false" onAction="#deletarInstrumento" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: #46220f; -fx-border-color: #aa7444; -fx-border-radius: 50; -fx-background-radius: 50;" text="Deletar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblView" layoutX="148.0" layoutY="450.0" onMouseClicked="#pegarLinha" prefHeight="136.0" prefWidth="303.0">
+        <columns>
+          <TableColumn fx:id="tblId" prefWidth="150.0" text="id" />
+          <TableColumn fx:id="tblNome" prefWidth="150.0" text="nome" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>

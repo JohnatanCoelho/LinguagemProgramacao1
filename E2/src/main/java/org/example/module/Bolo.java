@@ -1,13 +1,20 @@
 package org.example.module;
 
 public class Bolo {
+    private Integer id;
     private String nomeBolo;
-    private int quantidade;
+    private Integer quantidade;
     private String ingredientes;
     private String cobertura;
 
-    public Bolo(int quantidade, String ingrediente){
-        adicionarIngredientes(quantidade, ingrediente);
+    public Bolo(Integer id, String ingrediente, Integer quantidade){
+        this.id = id;
+        this.ingredientes = ingrediente;
+        this.quantidade = quantidade;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getNomeBolo() {
@@ -28,17 +35,6 @@ public class Bolo {
 
     public void setNomeBolo(String nomeBolo) {
         this.nomeBolo = nomeBolo;
-    }
-
-    public void adicionarIngredientes(int quantidade,String nomeIngrediente){
-        this.ingredientes = nomeIngrediente;
-        this.quantidade = quantidade;
-
-    }
-
-    public void finalizarBolo(String cobertura){
-        this.cobertura = cobertura;
-        System.out.println("Finalizando o bolo " + getNomeBolo() + " com cobertura de " + cobertura);
     }
 
 }

@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Instrumento {
+    private Integer id;
     private String nomeInstrumento;
     private boolean ligado;
     private double volume;
@@ -12,11 +13,14 @@ public class Instrumento {
     Clip clip;
 
 
-    public Instrumento(String nome, boolean ligado, double volume, String caminhoSom){
+    public Instrumento(Integer id, String nome, String caminhoSom){
+        this.id = id;
         this.nomeInstrumento = nome;
-        this.ligado = ligado;
-        this.volume = volume;
         this.caminhoSom = caminhoSom;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getCaminhoSom() {
@@ -31,38 +35,11 @@ public class Instrumento {
         return volume;
     }
 
-    public void ligarInstrumento(){
-        if(this.ligado != true){
-            this.ligado = true;
-            System.out.println("Ligando " + getNomeInstrumento());
-        }
-    }
-    public void aumentarVolume(double limiteVolume){
-        System.out.println("----------------");
-        System.out.println("Aumentando volume");
-        for(this.volume = 0 ; this.volume <= limiteVolume ; this.volume = this.volume + 1 ){
-            System.out.println("Volume : " + getVolume());
-        }
-    }
-    public void abaixarVolume(double abaixarVolume, double limiteVolume){
-        System.out.println("----------------");
-        System.out.println("Abaixando volume");
-        for(this.volume = limiteVolume ; this.volume >= abaixarVolume ; this.volume = this.volume - 1 ){
-            System.out.println("Volume : " + getVolume());
-        }
-    }
 
-//    public String perguntarParaTocar(Scanner entrada){
-//        System.out.println("----------------");
-//        System.out.println("Deseja tocar o som? [S/N]");
-//        String resp = entrada.nextLine().toUpperCase();
-//        return resp;
-//    }
-
-    public void tocarSom(){
+    public void tocarSom(String caminhoSom){
         try{
             // Método para carregar o arquivo do som
-            File arquivo = new File(getCaminhoSom()); // Caminho associado aquele instrumento
+            File arquivo = new File(caminhoSom); // Caminho associado aquele instrumento
 
             //Arquivo sendo convertido em um fluxo de aúdio para realimentar o clip
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(arquivo);
