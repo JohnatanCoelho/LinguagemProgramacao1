@@ -9,13 +9,18 @@ public class Animal {
     private String costumeAnimal;
     private String movimento;
 
-    public Animal(String animal, String nome, String tipo, Integer idade, String costume, String movimento){
+    public Animal(Integer id, String animal, String nome, String tipo, Integer idade, String costume, String movimento){
+        this.id = id;
         this.animal = animal;
         this.nome = nome;
         this. tipo = tipo;
         this.idade = idade;
         this.costumeAnimal = costume;
         this.movimento = movimento;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getAnimal() {
@@ -40,6 +45,34 @@ public class Animal {
 
     public String getMovimento() {
         return movimento;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setAnimal(String animal) {
+        this.animal = animal;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public void setCostumeAnimal(String costumeAnimal) {
+        this.costumeAnimal = costumeAnimal;
+    }
+
+    public void setMovimento(String movimento) {
+        this.movimento = movimento;
     }
 
     public String mostrarInformacaoAnimal(){

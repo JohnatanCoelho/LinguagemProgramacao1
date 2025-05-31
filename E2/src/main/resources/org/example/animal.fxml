@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -25,11 +27,11 @@
       <TextField fx:id="txtIdade" layoutX="212.0" layoutY="196.0" prefHeight="30.0" prefWidth="212.0" promptText="Informe a idade" />
       <TextField fx:id="txtTipo" layoutX="212.0" layoutY="242.0" prefHeight="30.0" prefWidth="212.0" promptText="Informe o tipo" />
       <TextField fx:id="txtCostume" layoutX="212.0" layoutY="287.0" prefHeight="30.0" prefWidth="212.0" promptText="Informe o costume" />
-      <Button fx:id="btnEnviar" layoutX="232.0" layoutY="371.0" mnemonicParsing="false" onAction="#EnviarDados" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: green; -fx-border-color: bdecb6; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
+      <Button fx:id="btnEnviar" layoutX="111.0" layoutY="373.0" mnemonicParsing="false" onAction="#EnviarDados" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: green; -fx-border-color: bdecb6; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="18.0" />
          </font></Button>
-      <TextArea fx:id="txtAreaInf" layoutX="136.0" layoutY="419.0" prefHeight="166.0" prefWidth="362.0" />
+      <TextArea fx:id="txtAreaInf" layoutX="429.0" layoutY="159.0" prefHeight="166.0" prefWidth="163.0" />
       <TextField fx:id="txtMovimento" layoutX="212.0" layoutY="329.0" prefHeight="30.0" prefWidth="212.0" promptText="Informe o movimento" />
       <Button fx:id="voltar" layoutX="500.0" layoutY="10.0" mnemonicParsing="false" onAction="#voltarTelaPrincipal" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: green; -fx-border-color: bdecb6; -fx-border-radius: 50; -fx-background-radius: 50;" text="Voltar" textFill="WHITE">
          <font>
@@ -60,10 +62,31 @@
             <Font name="Arial Bold" size="15.0" />
          </font>
       </Label>
-      <ImageView fitHeight="144.0" fitWidth="129.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="144.0" fitWidth="129.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@image/animais.png" />
          </image>
       </ImageView>
+      <TableView fx:id="tblView" layoutX="35.0" layoutY="430.0" onMouseClicked="#pegarDadosLinha" prefHeight="143.0" prefWidth="530.0">
+        <columns>
+          <TableColumn fx:id="idAnimal" prefWidth="62.39996337890625" text="id" />
+          <TableColumn fx:id="animalTb" prefWidth="71.20001220703125" text="animal" />
+            <TableColumn fx:id="nomeAnimaĺ" prefWidth="92.79995727539062" text="nome" />
+            <TableColumn fx:id="idadeAnimal" prefWidth="75.0" text="idade" />
+            <TableColumn fx:id="tipoAnimal" prefWidth="75.0" text="tipo" />
+            <TableColumn fx:id="costumeAnimal" prefWidth="75.0" text="costume" />
+            <TableColumn fx:id="movimentoAnimal" prefWidth="75.0" text="movimento" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAtualizar" layoutX="253.0" layoutY="373.0" mnemonicParsing="false" onAction="#atualizarAnimal" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: green; -fx-border-color: bdecb6; -fx-border-radius: 50; -fx-background-radius: 50;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDeletar" layoutX="397.0" layoutY="373.0" mnemonicParsing="false" onAction="#deletarAnimal" prefHeight="38.0" prefWidth="129.0" style="-fx-background-color: green; -fx-border-color: bdecb6; -fx-border-radius: 50; -fx-background-radius: 50;" text="Deletar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
