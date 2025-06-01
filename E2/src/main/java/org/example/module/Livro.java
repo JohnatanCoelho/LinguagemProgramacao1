@@ -1,6 +1,7 @@
 package org.example.module;
 
 public class Livro {
+    private Integer id;
     private String nomeLivro;
     private String autor;
     private Integer anoLancamento;
@@ -8,36 +9,12 @@ public class Livro {
     private String citacao2;
     private String citacao3;
 
-    public Livro(String nomeLivro, String autor, Integer anoLancamento) {
+    public Livro(Integer id, String nomeLivro, String autor, Integer anoLancamento, String citacao1, String citacao2, String citacao3) {
+        this.id = id;
         this.nomeLivro = nomeLivro;
         this.autor = autor;
         this.anoLancamento = anoLancamento;
-    }
 
-    public String getNomeLivro() {
-        return nomeLivro;
-    }
-
-    public String getAutor(){
-       return autor;
-    }
-
-    public int getAnoLancamento() {
-        return anoLancamento;
-    }
-
-
-    public String exibirLivro(){
-        String livro = "------------------------\n"
-                        + "Informações do livro: \n"
-                        + "Nome do livro: " + getNomeLivro() + "\n"
-                        + "Autor: " + getAutor() + "\n"
-                        +"Ano de lançamento: " + getAnoLancamento() + "\n"
-                        + "------------------------";
-        return livro;
-    }
-
-    public void adicionarCitacao(String citacao1, String citacao2, String citacao3){
         //A suprema arte da guerra é derrotar o inimigo sem lutar.
         this.citacao1 = citacao1;
 
@@ -48,6 +25,36 @@ public class Livro {
         this.citacao3 = citacao3;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public String getNomeLivro() {
+
+        return nomeLivro;
+    }
+
+    public String getAutor(){
+
+        return autor;
+    }
+
+    public int getAnoLancamento() {
+
+        return anoLancamento;
+    }
+
+    public String getCitacao1() {
+        return citacao1;
+    }
+
+    public String getCitacao2() {
+        return citacao2;
+    }
+
+    public String getCitacao3() {
+        return citacao3;
+    }
 
     public String exibirCitacao(){
         String exibicao = "1 - " + citacao1

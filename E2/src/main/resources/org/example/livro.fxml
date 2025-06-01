@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -45,17 +47,11 @@
          </font>
       </Label>
       <TextField fx:id="txtCitacao" layoutX="360.0" layoutY="201.0" prefHeight="36.0" prefWidth="181.0" promptText="Informe a citação" style="-fx-border-color: brown;" />
-      <Button fx:id="btnEnviar" layoutX="119.0" layoutY="363.0" mnemonicParsing="false" onAction="#enviarDadosLivro" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Enviar" textFill="WHITE">
+      <Button fx:id="btnEnviar" layoutX="249.0" layoutY="367.0" mnemonicParsing="false" onAction="#enviarDadosLivro" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Enviar" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btnCitacao" layoutX="397.0" layoutY="363.0" mnemonicParsing="false" onAction="#enviarCitacao" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Citação" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Button>
-      <TextArea fx:id="txtAreaDesc" layoutX="56.0" layoutY="425.0" prefHeight="122.0" prefWidth="228.0" promptText="Descrição do Livro" style="-fx-border-color: brown;" />
       <TextArea fx:id="txtAreaCitacao" layoutX="334.0" layoutY="425.0" prefHeight="122.0" prefWidth="228.0" promptText="Citação do Livro" style="-fx-border-color: brown;" />
       <Button fx:id="btnVolta" layoutX="491.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltaTelaPrincipal" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Voltar" textFill="WHITE">
          <font>
@@ -79,5 +75,22 @@
             <Font name="Arial Bold" size="13.0" />
          </font>
       </Label>
+      <TableView fx:id="tblView" layoutX="56.0" layoutY="421.0" onMouseClicked="#pegarLinha" prefHeight="130.0" prefWidth="228.0">
+        <columns>
+          <TableColumn fx:id="tblNome" prefWidth="75.0" text="nome" />
+          <TableColumn fx:id="tblAno" prefWidth="75.0" text="ano" />
+            <TableColumn fx:id="tblAutor" prefWidth="75.0" text="Autor" />
+        </columns>
+      </TableView>
+      <Button layoutX="134.0" layoutY="367.0" mnemonicParsing="false" onAction="#deletarLivro" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Deletar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnviar11" layoutX="366.0" layoutY="367.0" mnemonicParsing="false" onAction="#atualizarLivro" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #964B00; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
