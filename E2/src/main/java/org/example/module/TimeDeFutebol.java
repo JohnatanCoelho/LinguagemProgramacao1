@@ -1,16 +1,24 @@
 package org.example.module;
 
 public class TimeDeFutebol {
+    private Integer id;
     private String timeCasa;
     private String arena;
     private String timeVisitante;
-    private int golsCasa;
-    private int golsVisitante;
+    private Integer golsCasa;
+    private Integer golsVisitante;
 
-    public TimeDeFutebol(String time, String arena, String rival){
+    public TimeDeFutebol(Integer id, String time, String arena, String rival, Integer golsCasa, Integer golsVisitante){
+        this.id = id;
         this.timeCasa = time;
         this.arena = arena;
         this.timeVisitante = rival;
+        this.golsCasa = golsCasa;
+        this.golsVisitante = golsVisitante;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getTimeCasa() {
@@ -31,12 +39,6 @@ public class TimeDeFutebol {
 
     public int getGolsVisitante() {
         return golsVisitante;
-    }
-
-    public void perguntarOPlacar(Integer golsCasa, Integer golsVisitante){
-        this.golsCasa = golsCasa;
-        this.golsVisitante = golsVisitante;
-
     }
 
     public String verificacaoResultados(){
