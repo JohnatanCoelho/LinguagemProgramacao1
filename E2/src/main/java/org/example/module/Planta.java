@@ -1,16 +1,22 @@
 package org.example.module;
 
 public class Planta {
+    private Integer id;
     private String nome;
     private String tipo;
     private String cor;
-    private int nivelAgua;
+    private Integer nivelAgua;
 
-    public Planta(String nome, String tipo, String cor, Integer nivelAgua){
+    public Planta(Integer id, String nome, String tipo, String cor, Integer nivelAgua){
+        this.id = id;
         this.nome = nome;
         this.tipo = tipo;
         this.cor = cor;
         this.nivelAgua = nivelAgua;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getNome() {
