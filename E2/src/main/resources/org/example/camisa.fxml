@@ -4,6 +4,8 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -51,12 +53,12 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnEnviar" layoutX="435.0" layoutY="220.0" mnemonicParsing="false" onAction="#enviarDadosCamisa" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: b79a00; -fx-border-color: #FFEE8C; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
+      <Button fx:id="btnEnviar" layoutX="435.0" layoutY="182.0" mnemonicParsing="false" onAction="#enviarDadosCamisa" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: b79a00; -fx-border-color: #FFEE8C; -fx-border-radius: 50; -fx-background-radius: 50;" text="Enviar" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button fx:id="btnLavar" layoutX="435.0" layoutY="285.0" mnemonicParsing="false" onAction="#lavarCamisa" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: b79a00; -fx-border-color: #FFEE8C; -fx-border-radius: 50; -fx-background-radius: 50;" text="Lavar Camisa" textFill="WHITE">
+      <Button fx:id="btnLavar" layoutX="435.0" layoutY="353.0" mnemonicParsing="false" onAction="#lavarCamisa" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: b79a00; -fx-border-color: #FFEE8C; -fx-border-radius: 50; -fx-background-radius: 50;" text="Lavar Camisa" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
@@ -67,12 +69,12 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="241.0" layoutY="462.0" text="Status: ">
+      <Label layoutX="214.0" layoutY="390.0" text="Status: ">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblStatus" layoutX="300.0" layoutY="462.0" text="...">
+      <Label fx:id="lblStatus" layoutX="275.0" layoutY="390.0" text="...">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
@@ -83,10 +85,27 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblAviso" layoutX="247.0" layoutY="514.0" text="Aviso" textFill="RED">
+      <Label fx:id="lblAviso" layoutX="43.0" layoutY="14.0" text="Aviso" textFill="RED">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Label>
+      <TableView fx:id="tblView" layoutX="304.0" layoutY="424.0" onMouseClicked="#pegarLinha" prefHeight="162.0" prefWidth="222.0">
+        <columns>
+          <TableColumn fx:id="tblTam" prefWidth="75.0" text="tamanho" />
+          <TableColumn fx:id="tblCor" prefWidth="75.0" text="cor" />
+            <TableColumn fx:id="tblTipo" prefWidth="75.0" text="tipo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEnviar1" layoutX="435.0" layoutY="234.0" mnemonicParsing="false" onAction="#deletarCamisa" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: b79a00; -fx-border-color: #FFEE8C; -fx-border-radius: 50; -fx-background-radius: 50;" text="Deletar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEnviar11" layoutX="435.0" layoutY="285.0" mnemonicParsing="false" onAction="#atualizarCamisa" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: b79a00; -fx-border-color: #FFEE8C; -fx-border-radius: 50; -fx-background-radius: 50;" text="Atualizar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

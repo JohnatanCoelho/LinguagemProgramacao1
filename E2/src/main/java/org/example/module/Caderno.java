@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.shape.Rectangle;
 
 public class Caderno {
+    private Integer id;
     private String tamanho;
     private String cor;
     private int numPaginas;
@@ -12,14 +13,35 @@ public class Caderno {
     @FXML
     private Rectangle capa;
 
-    public Caderno(String tamanho, String cor, int numPaginas, String tipo) {
+    public Caderno(Integer id, String tamanho, String cor, Integer numPaginas, String tipo) {
+       this.id = id;
         this.tamanho = tamanho;
         this.cor = cor;
         this.numPaginas = numPaginas;
         this.tipo = tipo;
     }
 
-    public int getNumPaginas() {
+    public Integer getId() {
+        return id;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public Rectangle getCapa() {
+        return capa;
+    }
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public Integer getNumPaginas() {
         return numPaginas;
     }
 

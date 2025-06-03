@@ -12,6 +12,8 @@ import org.example.module.TimeDeFutebol;
 
 import java.io.IOException;
 import java.sql.Time;
+import java.util.List;
+import java.util.Optional;
 
 public class TimesController {
 
@@ -81,11 +83,25 @@ public class TimesController {
         Integer golsVisitante = golVisitante.getValue();
 
         // Determinando os dados da partida
-        daoTime.inserirPartida();
+        daoTime.inserirPartida(casa, visitante, arena, golsCasa, golsVisitante);
 
         // Limpando campos
         limparCampos();
-        txtArea.setText(novaPartida.mostrarPlacar());
+        atualizarTabela();
+
+    }
+
+    public void atualizarTabela(){
+        List<TimeDeFutebol> tm = daoTime.listarTime();
+
+        timeList.clear();
+
+        for (TimeDeFutebol time : tm){
+            timeList.add(time);
+        }
+
+        limparCampos();
+        tblView.setItems(timeList);
     }
 
 
@@ -101,8 +117,56 @@ public class TimesController {
         golCasa.setValue(novaPartida.getGolsCasa());
         golVisitante.setValue(novaPartida.getGolsVisitante());
 
+        txtArea.setText(novaPartida.mostrarPlacar());
+
 
     }
+
+    @FXML
+    void atualizarPartida(ActionEvent event) {
+        if(novaPartida != null){
+            // Pegando os novos dados e mandando para o dao
+           daoTime.updatePartida(novaPartida.getId(), txtCasa.getText(),
+                    txtVisitante.getText(), txtArena.getText(), golCasa.getValue(), golVisitante.getValue());
+
+            // Limpando
+            novaPartida = null;
+            limparCampos();
+            atualizarTabela();
+            txtArea.clear();
+        } else {
+            alerta();
+        }
+        atualizarTabela();
+    }
+
+    @FXML
+    void deletarPartida(ActionEvent event) {
+        if (novaPartida != null) {
+            Alert alertarDelete = new Alert(Alert.AlertType.CONFIRMATION, "Deseja mesmo excluir! ", ButtonType.YES, ButtonType.NO);
+
+            Optional<ButtonType> result = alertarDelete.showAndWait();
+
+            if (result.isPresent() && result.get() == ButtonType.YES){
+                daoTime.deletarPartida(novaPartida.getId());
+
+                limparCampos();
+                atualizarTabela();
+                novaPartida = null;
+            }
+
+        } else {
+            alerta();
+        }
+    }
+
+    public void alerta(){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error Ação");
+        alert.setHeaderText("Selecione a linha da tabela primeiro!");
+        alert.show();
+    }
+
 
     public void limparCampos(){
         txtArea.clear();
@@ -111,6 +175,7 @@ public class TimesController {
         golCasa.setValue(0);
         golVisitante.setValue(0);
         txtArea.clear();
+        txtArena.clear();
     }
 
     @FXML
@@ -123,6 +188,9 @@ public class TimesController {
         tblArena.setCellValueFactory(new PropertyValueFactory<>("arena"));
         tblGolCasa.setCellValueFactory(new PropertyValueFactory<>("golsCasa"));
         tblGolVisitante.setCellValueFactory(new PropertyValueFactory<>("golsVisitante"));
+
+        tblView.setItems(timeList);
+        atualizarTabela();
     }
 
 

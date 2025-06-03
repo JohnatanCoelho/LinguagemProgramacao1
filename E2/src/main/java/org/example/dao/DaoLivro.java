@@ -30,7 +30,7 @@ public class DaoLivro {
             pst.executeUpdate();
 
         } catch (SQLException e) {
-            System.out.println("Erro ao inserir novo instrumento: " + e.getMessage());
+            System.out.println("Erro ao inserir novo livro: " + e.getMessage());
 
         }
     }
